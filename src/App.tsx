@@ -13,11 +13,14 @@ function App() {
   const [locations, setLocations] = useState<Location[]>([]); // ← изначально пусто
   const [, setLoading] = useState<boolean>(true);
 
+  // Локальный бэк ВРЕМЕННО!
+  const API_BASE = "http://192.168.1.70:8000";
+
   // Загружаем локации при старте
   useEffect(() => {
     const loadLocations = async () => {
       try {
-        const res = await fetch('http://localhost:8000/api/locations');
+        const res = await fetch(`${API_BASE}/api/locations`);
         if (!res.ok) throw new Error('Не удалось загрузить локации');
         const data: Location[] = await res.json();
         setLocations(data);
@@ -45,7 +48,7 @@ function App() {
     console.log('🆕 Отправка на сервер:', newLocationData);
 
     try {
-      const res = await fetch('http://localhost:8000/api/locations', {
+      const res = await fetch(`${API_BASE}/api/locations`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newLocationData),
@@ -70,7 +73,7 @@ function App() {
     console.log('🗑️ Удаляем локацию:', location.id);
 
     try {
-      const res = await fetch(`http://localhost:8000/api/locations/${location.id}`, {
+      const res = await fetch(`${API_BASE}/api/locations/${location.id}`, {
         method: 'DELETE',
       });
 
