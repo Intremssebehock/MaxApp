@@ -1,0 +1,68 @@
+.bottomNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: radial-gradient(circle,rgba(105, 164, 254, 1) 0%, rgba(71, 145, 255, 1) 100%);
+  /*border-top: 1px solid #ddd;*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0;
+  z-index: 10;
+  box-shadow: -1px 12px 20px 9px rgb(0 0 0);
+}
+
+.navBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 12px;
+  outline: none;
+  position: relative;
+  bottom: 0px;
+      text-shadow: 0px 0px 0px rgb(255, 255, 255);
+  transition: all 0.2s ease;
+}
+
+.navBtn:focus {
+  outline: none;         
+  box-shadow: none;      
+}
+
+.navBtn:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.navBtn svg {
+  margin-bottom: 5px;
+}
+
+.navBtn span {
+}
+
+.active {
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  bottom: 5px;
+}
+
+.bottomNav i {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.Map {
+    background-image: url(./../assets/map.svg);
+}
+
+.userInfo {
+    background-image: url(./../assets/pen.svg);
+}

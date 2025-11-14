@@ -1,0 +1,73 @@
+.mapContainer {
+  width: 100vw;
+  height: 100%;
+}
+
+.propertiesInfo {
+  position: absolute;
+  z-index: 2222;
+  bottom: 25%;
+  background-color: #d9e7ff;
+  color: #235fb5;
+
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-width: 300px;
+  padding: 20px;
+  text-align: left;
+}
+
+.leaflet-attribution-flag {
+  display: none !important;
+}
+
+.cityForm {
+  padding: 12px;
+  background: radial-gradient(circle, rgba(105, 164, 254, 1) 0%, rgba(71, 145, 255, 1) 100%);
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  gap: 8px;
+}
+
+.formInput {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 0px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  box-shadow: none;
+  border-radius: 0px;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0px 0px 4px 1px rgba(252, 252, 252, 0.301);
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  transition: all 0.4s ease-out;
+}
+
+.formInput::placeholder {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0px 0px 2px rgb(255, 255, 255);
+}
+
+.formInput:active {
+  outline: none;
+}
+.formInput:hover {
+  box-shadow: 2px 3px 4px 1px rgba(252, 252, 252, 0.301);
+}
+.formInput:focus {
+  outline: none;
+  box-shadow: 2px 3px 4px 1px rgba(252, 252, 252, 0.301);
+}
+
+.formButton {
+  padding: 8px 16px;
+  background-color: #0445b9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px;
+}

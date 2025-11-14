@@ -1,8 +1,16 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /*margin: 0 auto;*/
+  /*padding: 2rem;*/
   text-align: center;
+  height: 100vh;
+  padding-bottom: 77px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.leaflet-attribution-flag {
+  display: none !important;
 }
 
 .logo {

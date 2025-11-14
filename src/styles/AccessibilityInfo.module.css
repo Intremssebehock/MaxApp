@@ -1,0 +1,106 @@
+.propertiesList {
+    list-style: none;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.accessibilityTitle {
+  margin: 0px;
+  color: #004cab;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.selectList {
+            
+}
+
+.accessibilityContainer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    padding-top: 25px;  
+    background-color: white; 
+}
+
+.categoryButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.categoryButton {
+  color: #8abaff;
+  background-color: #deeaff;
+  width: 350px;
+  border: 2px solid #8abbff00;
+  transition: border 1s;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.categoryButton:active {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  border: 2px solid #8abaff;
+}
+
+.categoryButton:hover {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  border: 2px solid #8abaff;
+}
+
+.categoryButton:focus {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  border: 2px solid #8abaff;
+}
+
+.iconWrapper {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+}
+
+.iconWrapper:nth-child(1) {
+  background-image: url(./../assets/invalidnaya_kolyaska_uljlbcik63ln.svg);
+}
+
+.iconWrapper:nth-child(2) {
+  background-image: url(./../assets/mozg_wo2ul155vqcq.svg);
+}
+
+.criteriaSection h3 {
+  color: #004cab;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.propertiesList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid #66a3ff;
+  border-radius: 16px;
+  width: 350px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.propertiesList li {
+  color: #004cab;
+  border-bottom: 1px solid #004dab56;
+}
